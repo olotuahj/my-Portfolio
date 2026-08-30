@@ -1,0 +1,2000 @@
+/* ==========================================
+       MOBILE VIEW
+       767px AND BELOW
+========================================== */
+
+@media (max-width: 767px) {
+
+
+    /* ================= GENERAL ================= */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #031638;
+        color: #ffffff;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    #project-header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+            width:100%;
+        height:70px;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding: 0 18px;
+
+        background:#0d2448;
+    }
+
+
+ /* ================= LOGO ================= */
+
+    .logo h2{
+        color:#fff;
+        font-size:1.2rem;
+        font-weight:700;
+    }
+
+    .logo span{
+        color:#63b2ff;
+    }
+
+    /* ================= DESKTOP NAVIGATION ================= */
+
+    .nav-links {
+        display: none;
+    }
+
+
+
+    /* ================= HAMBURGER ================= */
+
+    .hamburger{
+        display:block;
+
+        border:none;
+        background:none;
+
+        color:#fff;
+
+        font-size:1.8rem;
+
+        cursor:pointer;
+    }
+
+
+   /* ================= MOBILE MENU ================= */
+
+    .mobile-menu{
+        position:fixed;
+
+        top:0;
+        right:-100%;
+
+        width:75%;
+        height:100vh;
+
+        background:#12386b;
+
+        display:flex;
+        flex-direction:column;
+
+        padding:30px;
+
+        transition:right .4s ease;
+
+        z-index:1001;
+    }
+
+
+    /* ================= OPEN MENU ================= */
+
+    .mobile-menu.active{
+        right:0;
+    }
+
+    /* ================= CLOSE BUTTON ================= */
+
+    .close-menu{
+        align-self:flex-end;
+
+        border:none;
+        background:none;
+
+        color:#fff;
+
+        font-size:2rem;
+
+        cursor:pointer;
+
+        margin-bottom:40px;
+    }
+
+
+    /* ================= MENU LINKS ================= */
+
+    .mobile-menu a{
+        text-decoration:none;
+
+        color:#fff;
+
+        font-size:1.2rem;
+
+        margin:15px 0;
+
+        transition:.3s;
+    }
+
+    .mobile-menu a:hover{
+        color:#63b2ff;
+        padding-left:10px;
+    }
+
+
+    /* ================= PROJECT HERO ================= */
+
+    .project-hero {
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 130px 8% 40px;
+
+        overflow: hidden;
+    }
+
+
+    /* ================= SECTION LABEL ================= */
+
+    .section-label {
+        position: relative;
+
+        display: inline-block;
+
+        padding: 8px 20px;
+
+        border-radius: 25px;
+
+        background: rgba(0, 102, 255, 0.18);
+
+        color: #087cff;
+
+        font-size: 14px;
+        font-weight: 600;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* ================= PROJECT HEADING ================= */
+
+    .project-hero h1 {
+        position: relative;
+
+        font-size: 3.1rem;
+        line-height: 1.15;
+
+        font-weight: 700;
+
+        margin-bottom: 22px;
+    }
+
+    .project-hero h1 span {
+        color: #087cff;
+    }
+
+
+    /* ================= PROJECT DESCRIPTION ================= */
+
+    .project-hero p {
+        position: relative;
+
+        max-width: 570px;
+
+        margin: 0 auto;
+
+        color: #ffffff;
+
+        font-size: 1.05rem;
+
+        line-height: 1.8;
+    }
+
+
+    /* ================= PROJECTS CONTAINER ================= */
+
+    .projects-container {
+        width: 100%;
+
+        padding: 0 4% 25px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 22px;
+    }
+
+
+    /* ================= PROJECT CARD ================= */
+
+    .project-card {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 32px 32px 28px;
+
+        border: 1px solid rgba(0, 119, 255, 0.55);
+
+        border-radius: 18px;
+
+        background: rgba(5, 31, 70, 0.65);
+    }
+
+
+    /* ================= PROJECT ICON ================= */
+
+    .project-icon {
+        width: 92px;
+        height: 92px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 15px;
+
+        color: #ffffff;
+
+        font-size: 42px;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* ================= PORTFOLIO ICON ================= */
+
+    .portfolio-icon {
+        background: #0864ff;
+    }
+
+
+    /* ================= GETIN ICON ================= */
+
+    .getin-icon {
+        background: #08a900;
+    }
+
+
+    /* ================= RECIPE ICON ================= */
+
+    .recipe-icon {
+        background: #ff6508;
+    }
+
+
+    /* ================= PROJECT CONTENT ================= */
+
+    .project-content {
+        width: 100%;
+    }
+
+
+    /* ================= PROJECT TITLE ================= */
+
+    .project-content h2 {
+        color: #ffffff;
+
+        font-size: 1.75rem;
+
+        line-height: 1.3;
+
+        font-weight: 700;
+
+        margin-bottom: 14px;
+    }
+
+
+    /* ================= PROJECT DESCRIPTION ================= */
+
+    .project-content p {
+        color: #ffffff;
+
+        font-size: 1.05rem;
+
+        line-height: 1.8;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* ================= TECHNOLOGIES ================= */
+
+    .technologies {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        gap: 14px;
+    }
+
+
+    .technologies span {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px 17px;
+
+        border-radius: 9px;
+
+        font-size: 1rem;
+
+        font-weight: 500;
+    }
+
+
+    /* ================= HTML ================= */
+
+    .html-tech {
+        background: rgba(255, 85, 0, 0.20);
+        color: #ff721f;
+    }
+
+
+    /* ================= CSS ================= */
+
+    .css-tech {
+        background: rgba(0, 102, 255, 0.25);
+        color: #8ec5ff;
+    }
+
+
+    /* ================= JAVASCRIPT ================= */
+
+    .javascript-tech {
+        background: rgba(170, 150, 0, 0.22);
+        color: #ffff00;
+    }
+
+
+    /* ================= NODE.JS ================= */
+
+    .node-tech {
+        background: rgba(0, 145, 90, 0.25);
+        color: #58e5a8;
+    }
+
+
+    /* ================= API ================= */
+
+    .api-tech {
+        background: rgba(100, 60, 180, 0.35);
+        color: #d0b8ff;
+    }
+
+
+    /* ================= CALL TO ACTION ================= */
+
+    .project-cta {
+        position: relative;
+
+        width: calc(100% - 8%);
+
+        margin: 0 4% 22px;
+
+        padding: 30px 35px 28px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        border: 1px solid rgba(0, 119, 255, 0.55);
+
+        border-radius: 18px;
+
+        background: rgba(5, 31, 70, 0.65);
+
+        overflow: hidden;
+    }
+
+
+    /* ================= CTA ICON ================= */
+
+    .cta-icon {
+        position: relative;
+
+        width: 130px;
+        height: 130px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 25px;
+
+        border-radius: 50%;
+
+        background: #0864ff;
+
+        color: #ffffff;
+
+        font-size: 55px;
+
+        z-index: 2;
+    }
+
+
+    /* ================= CTA CONTENT ================= */
+
+    .cta-content {
+        position: relative;
+
+        width: 100%;
+
+        z-index: 2;
+    }
+
+
+    .cta-content h2 {
+        color: #ffffff;
+
+        font-size: 1.75rem;
+
+        line-height: 1.3;
+
+        font-weight: 700;
+
+        margin-bottom: 15px;
+    }
+
+
+    .cta-content p {
+        color: #ffffff;
+
+        font-size: 1.05rem;
+
+        line-height: 1.8;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* ================= CTA BUTTON ================= */
+
+    .cta-button {
+        position: relative;
+
+        width: 100%;
+
+        height: 58px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 15px;
+
+        padding: 0 20px;
+
+        border-radius: 9px;
+
+        background: linear-gradient(
+            90deg,
+            #087cff,
+            #0054f5
+        );
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        font-size: 1.15rem;
+
+        font-weight: 600;
+
+        z-index: 2;
+    }
+
+
+    .cta-button i {
+        font-size: 1.4rem;
+    }
+
+
+    /* ================= CTA DECORATIONS ================= */
+
+    .left-shape,
+    .right-shape {
+        position: absolute;
+
+        width: 150px;
+        height: 70px;
+
+        bottom: -30px;
+
+        border-radius: 50%;
+
+        background: rgba(0, 67, 180, 0.45);
+
+        z-index: 1;
+    }
+
+    .left-shape {
+        left: -45px;
+    }
+
+    .right-shape {
+        right: -45px;
+    }
+
+}
+
+/* ==========================================
+       SMALL PHONES
+       400px AND BELOW
+========================================== */
+
+@media (max-width: 400px) {
+    .navbar {
+
+        height: 80px;
+    }
+
+
+    .logo h2 {
+
+        font-size: 1rem;
+    }
+
+
+    .hamburger {
+
+        font-size: 1.7rem;
+    }
+
+
+
+    /* ================= PROJECT HERO ================= */
+
+    .project-hero {
+        padding: 120px 6% 35px;
+    }
+
+
+    /* ================= SECTION LABEL ================= */
+
+    .section-label {
+        padding: 7px 16px;
+        font-size: 12px;
+        margin-bottom: 17px;
+    }
+
+
+    /* ================= PROJECT HEADING ================= */
+
+    .project-hero h1 {
+        font-size: 2.45rem;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+
+
+    /* ================= PROJECT DESCRIPTION ================= */
+
+    .project-hero p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        padding: 0 10px;
+    }
+
+
+    /* ================= PROJECTS CONTAINER ================= */
+
+    .projects-container {
+        padding: 0 4% 20px;
+        gap: 18px;
+    }
+
+
+    /* ================= PROJECT CARD ================= */
+
+    .project-card {
+        padding: 27px 25px 25px;
+        border-radius: 16px;
+    }
+
+
+    /* ================= PROJECT ICON ================= */
+
+    .project-icon {
+        width: 82px;
+        height: 82px;
+
+        font-size: 36px;
+
+        border-radius: 14px;
+
+        margin-bottom: 21px;
+    }
+
+
+    /* ================= PROJECT TITLE ================= */
+
+    .project-content h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+
+    /* ================= PROJECT DESCRIPTION ================= */
+
+    .project-content p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+        margin-bottom: 21px;
+    }
+
+
+    /* ================= TECHNOLOGIES ================= */
+
+    .technologies {
+        gap: 10px;
+    }
+
+    .technologies span {
+        padding: 9px 14px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .project-cta {
+        width: calc(100% - 8%);
+        margin: 0 4% 18px;
+
+        padding: 27px 24px 24px;
+
+        border-radius: 16px;
+    }
+
+
+    /* ================= CTA ICON ================= */
+
+    .cta-icon {
+        width: 110px;
+        height: 110px;
+
+        font-size: 47px;
+
+        margin-bottom: 21px;
+    }
+
+
+    /* ================= CTA HEADING ================= */
+
+    .cta-content h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 13px;
+    }
+
+
+    /* ================= CTA TEXT ================= */
+
+    .cta-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 21px;
+    }
+
+
+    /* ================= CTA BUTTON ================= */
+
+    .cta-button {
+        height: 55px;
+
+        gap: 12px;
+
+        font-size: 1rem;
+
+        border-radius: 8px;
+    }
+
+    .cta-button i {
+        font-size: 1.2rem;
+    }
+
+
+    /* ================= CTA DECORATIONS ================= */
+
+    .left-shape,
+    .right-shape {
+        width: 120px;
+        height: 60px;
+        bottom: -28px;
+    }
+
+    .left-shape {
+        left: -40px;
+    }
+
+    .right-shape {
+        right: -40px;
+    }
+
+}
+
+/* ==========================================
+       PROJECT PAGE — TABLET VIEW
+       768px - 1024px
+========================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* ================= GENERAL ================= */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #031638;
+        color: #ffffff;
+        overflow-x: auto;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    #project-header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 6%;
+        background: #0d2448;
+    }
+
+
+  /* ================= LOGO ================= */
+
+    .logo h2{
+        color:#fff;
+        font-size:1.45rem;
+        font-weight:700;
+    }
+
+    .logo span{
+        color:#63b2ff;
+    }
+
+
+  /* ================= NAVIGATION ================= */
+
+    .nav-links {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 25px;
+
+        list-style: none;
+         overflow-x: auto;
+    }
+
+
+    .nav-links a {
+
+        text-decoration: none;
+
+        color: #ffffff;
+
+        font-size: 0.95rem;
+
+        font-weight: 500;
+
+        transition: 0.3s;
+    }
+
+
+    .nav-links a:hover {
+
+        color: #63b2ff;
+    }
+
+
+    .nav-links .active {
+
+        color: #63b2ff;
+    }
+
+    /* ================= HAMBURGER ================= */
+
+    .hamburger {
+        display: none;
+    }
+
+
+    /* ================= MOBILE MENU ================= */
+
+    .mobile-menu {
+        display: none;
+    }
+
+
+    /* ==========================================
+           PROJECT HERO
+    ========================================== */
+
+    .project-hero {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 120px 7% 45px;
+        overflow: hidden;
+    }
+
+    .project-section{
+        width: 110%;
+    }
+
+
+    /* ================= BACKGROUND DOTS ================= */
+
+    .project-hero::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 140px;
+        top: 125px;
+        left: 30px;
+
+        background-image: radial-gradient(
+            circle,
+            #1684ff 2.5px,
+            transparent 3.5px
+        );
+
+        background-size: 22px 22px;
+        opacity: 0.75;
+    }
+
+    .project-hero::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 140px;
+        top: 125px;
+        right: 30px;
+
+        background-image: radial-gradient(
+            circle,
+            #1684ff 2.5px,
+            transparent 3.5px
+        );
+
+        background-size: 22px 22px;
+        opacity: 0.65;
+    }
+
+
+    /* ================= SECTION LABEL ================= */
+
+    .section-label {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        border-radius: 25px;
+
+        background: rgba(0, 102, 255, 0.18);
+        color: #087cff;
+
+        font-size: 14px;
+        font-weight: 600;
+
+        margin-bottom: 18px;
+        z-index: 2;
+    }
+
+
+    /* ================= PROJECT HEADING ================= */
+
+    .project-hero h1 {
+        position: relative;
+        font-size: 3.2rem;
+        line-height: 1.15;
+        font-weight: 700;
+        margin-bottom: 18px;
+        z-index: 2;
+    }
+
+    .project-hero h1 span {
+        color: #087cff;
+    }
+
+
+    /* ================= PROJECT DESCRIPTION ================= */
+
+    .project-hero p {
+        position: relative;
+        max-width: 700px;
+        margin: 0 auto;
+
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.75;
+
+        z-index: 2;
+    }
+
+
+    /* ==========================================
+           PROJECTS CONTAINER
+    ========================================== */
+
+    .projects-container {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+
+        padding: 0 5% 25px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+
+    /* ==========================================
+           PROJECT CARD
+    ========================================== */
+
+    .project-card {
+        width: 100%;
+        min-height: 190px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 25px 30px;
+
+        border: 1px solid rgba(0, 119, 255, 0.55);
+        border-radius: 18px;
+
+        background: rgba(5, 31, 70, 0.65);
+    }
+
+
+    /* ================= PROJECT ICON ================= */
+
+    .project-icon {
+        width: 78px;
+        height: 78px;
+
+        min-width: 78px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 13px;
+
+        color: #ffffff;
+        font-size: 35px;
+
+        margin-right: 25px;
+    }
+
+
+    /* ================= PORTFOLIO ICON ================= */
+
+    .portfolio-icon {
+        background: #0864ff;
+    }
+
+
+    /* ================= GETIN ICON ================= */
+
+    .getin-icon {
+        background: #08a900;
+    }
+
+
+    /* ================= RECIPE ICON ================= */
+
+    .recipe-icon {
+        background: #ff6508;
+    }
+
+
+    /* ==========================================
+           PROJECT CONTENT
+    ========================================== */
+
+    .project-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+
+    /* ================= PROJECT TITLE ================= */
+
+    .project-content h2 {
+        color: #ffffff;
+
+        font-size: 1.45rem;
+        line-height: 1.3;
+        font-weight: 700;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* ================= PROJECT DESCRIPTION ================= */
+
+    .project-content p {
+        color: #ffffff;
+
+        font-size: 0.95rem;
+        line-height: 1.65;
+
+        max-width: 500px;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* ==========================================
+           TECHNOLOGIES
+    ========================================== */
+
+    .technologies {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        gap: 9px;
+    }
+
+
+    .technologies span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 8px 13px;
+
+        border-radius: 8px;
+
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+
+    /* ================= HTML ================= */
+
+    .html-tech {
+        background: rgba(255, 85, 0, 0.20);
+        color: #ff721f;
+    }
+
+
+    /* ================= CSS ================= */
+
+    .css-tech {
+        background: rgba(0, 102, 255, 0.25);
+        color: #8ec5ff;
+    }
+
+
+    /* ================= JAVASCRIPT ================= */
+
+    .javascript-tech {
+        background: rgba(170, 150, 0, 0.22);
+        color: #ffff00;
+    }
+
+
+    /* ================= NODE.JS ================= */
+
+    .node-tech {
+        background: rgba(0, 145, 90, 0.25);
+        color: #58e5a8;
+    }
+
+
+    /* ================= API ================= */
+
+    .api-tech {
+        background: rgba(100, 60, 180, 0.35);
+        color: #d0b8ff;
+    }
+
+
+    /* ==========================================
+           CALL TO ACTION
+    ========================================== */
+
+    .project-cta {
+        position: relative;
+
+        width: 90%;
+        max-width: 920px;
+
+        margin: 0 auto 25px;
+
+        padding: 25px 35px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 30px;
+
+        border: 1px solid rgba(0, 119, 255, 0.55);
+        border-radius: 18px;
+
+        background: rgba(5, 31, 70, 0.65);
+
+        overflow: hidden;
+    }
+
+
+    /* ================= CTA ICON ================= */
+
+    .cta-icon {
+        position: relative;
+
+        width: 105px;
+        height: 105px;
+
+        min-width: 105px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: #0864ff;
+        color: #ffffff;
+
+        font-size: 45px;
+
+        z-index: 2;
+    }
+
+
+    /* ================= CTA CONTENT ================= */
+
+    .cta-content {
+        position: relative;
+
+        flex: 1;
+
+        z-index: 2;
+    }
+
+
+    .cta-content h2 {
+        color: #ffffff;
+
+        font-size: 1.5rem;
+        line-height: 1.3;
+        font-weight: 700;
+
+        margin-bottom: 10px;
+    }
+
+
+    .cta-content p {
+        color: #ffffff;
+
+        font-size: 0.95rem;
+        line-height: 1.65;
+
+        max-width: 450px;
+    }
+
+
+    /* ================= CTA BUTTON ================= */
+
+    .cta-button {
+        position: relative;
+
+        min-width: 170px;
+        height: 55px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 12px;
+
+        padding: 0 20px;
+
+        border-radius: 8px;
+
+        background: linear-gradient(
+            90deg,
+            #087cff,
+            #0054f5
+        );
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        font-size: 1rem;
+        font-weight: 600;
+
+        z-index: 2;
+    }
+
+
+    .cta-button i {
+        font-size: 1.2rem;
+    }
+
+
+    /* ==========================================
+           CTA DECORATIONS
+    ========================================== */
+
+    .left-shape,
+    .right-shape {
+        position: absolute;
+
+        width: 130px;
+        height: 60px;
+
+        bottom: -28px;
+
+        border-radius: 50%;
+
+        background: rgba(0, 67, 180, 0.45);
+
+        z-index: 1;
+    }
+
+
+    .left-shape {
+        left: -40px;
+    }
+
+
+    .right-shape {
+        right: -40px;
+    }
+}
+
+/* ==========================================
+       PROJECT PAGE — DESKTOP VIEW
+       1025px AND ABOVE
+========================================== */
+
+@media (min-width: 1025px) {
+
+    /* ================= GENERAL ================= */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #031638;
+        color: #ffffff;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    #project-header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+
+  /* ================= NAVBAR ================= */
+
+    .navbar{
+        width:100%;
+        height:80px;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+        padding:0 10%;
+
+        background:#0d2448;
+    }
+
+
+ /* ================= LOGO ================= */
+
+    .logo h2{
+        color:#fff;
+        font-size:1.7rem;
+        font-weight:700;
+    }
+
+    .logo span{
+        color:#63b2ff;
+    }
+
+
+    /* ================= NAVIGATION ================= */
+
+    .nav-links{
+        display:flex;
+
+        align-items:center;
+
+        gap:45px;
+
+        list-style:none;
+    }
+
+    .nav-links a{
+        text-decoration:none;
+
+        color:#fff;
+
+        font-size:1.05rem;
+
+        font-weight:500;
+
+        transition:.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active{
+        color:#63b2ff;
+    }
+
+
+    /* ================= HAMBURGER ================= */
+
+    .hamburger{
+        display:none;
+    }
+
+
+    /* ================= MOBILE MENU ================= */
+
+    .mobile-menu{
+        display:none;
+    }
+
+
+    .project-section {
+           width: 100%;
+
+    min-height: 100vh;
+
+    padding: 120px 8% 80px;
+
+    }
+
+
+
+    /* ==========================================
+           PROJECT HERO
+    ========================================== */
+
+    .project-hero {
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 98px 5% 30px;
+
+        overflow: hidden;
+
+        background:
+            linear-gradient(
+                135deg,
+                #020d22 0%,
+                #031a42 50%,
+                #001b45 100%
+            );
+    }
+
+
+    /* ================= BACKGROUND DOTS ================= */
+
+    .project-hero::before {
+        content: "";
+
+        position: absolute;
+
+        width: 140px;
+        height: 130px;
+
+        top: 45px;
+        left: 35px;
+
+        background-image: radial-gradient(
+            circle,
+            #087cff 2.5px,
+            transparent 3.5px
+        );
+
+        background-size: 21px 21px;
+
+        opacity: 0.85;
+    }
+
+
+    .project-hero::after {
+        content: "";
+
+        position: absolute;
+
+        width: 140px;
+        height: 130px;
+
+        top: 45px;
+        right: 35px;
+
+        background-image: radial-gradient(
+            circle,
+            #087cff 2.5px,
+            transparent 3.5px
+        );
+
+        background-size: 21px 21px;
+
+        opacity: 0.85;
+    }
+
+
+
+    /* ================= SECTION LABEL ================= */
+
+    .section-label {
+        position: relative;
+
+        display: inline-block;
+
+        padding: 7px 18px;
+
+        margin-bottom: 14px;
+
+        border-radius: 25px;
+
+        background: rgba(0, 102, 255, 0.18);
+
+        color: #087cff;
+
+        font-size: 14px;
+        font-weight: 600;
+
+        z-index: 2;
+    }
+
+
+
+    /* ================= PROJECT HEADING ================= */
+
+    .project-hero h1 {
+        position: relative;
+
+        margin-bottom: 14px;
+
+        color: #ffffff;
+
+        font-size: 4.2rem;
+        line-height: 1.1;
+
+        font-weight: 700;
+
+        z-index: 2;
+    }
+
+
+    .project-hero h1 span {
+        color: #087cff;
+    }
+
+
+
+    /* ================= PROJECT DESCRIPTION ================= */
+
+    .project-hero p {
+        position: relative;
+
+        max-width: 800px;
+
+        margin: 0 auto;
+
+        color: #ffffff;
+
+        font-size: 1rem;
+        line-height: 1.75;
+
+        z-index: 2;
+    }
+
+
+
+    /* ==========================================
+           PROJECTS CONTAINER
+    ========================================== */
+
+    .projects-container {
+        width: 100%;
+
+        max-width: 1360px;
+
+        margin: 0 auto;
+
+        padding: 0 0 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 17px;
+    }
+
+
+
+    /* ==========================================
+           PROJECT CARD
+    ========================================== */
+
+    .project-card {
+        width: 100%;
+
+        min-height: 158px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 25px 32px;
+
+        border: 1px solid rgba(0, 119, 255, 0.55);
+
+        border-radius: 17px;
+
+        background: rgba(5, 31, 70, 0.65);
+
+        transition:
+            transform 0.3s ease,
+            background 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+
+    /* ================= CARD HOVER ================= */
+
+    .project-card:hover {
+        transform: translateY(-4px);
+
+        background: rgba(7, 39, 82, 0.8);
+
+        box-shadow:
+            0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    /* ==========================================
+           PROJECT ICON
+    ========================================== */
+
+    .project-icon {
+        width: 72px;
+        height: 72px;
+
+        min-width: 72px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-right: 34px;
+
+        border-radius: 12px;
+
+        color: #ffffff;
+
+        font-size: 32px;
+    }
+
+
+    /* ================= PORTFOLIO ICON ================= */
+
+    .portfolio-icon {
+        background: #0864ff;
+    }
+
+
+    /* ================= GETIN ICON ================= */
+
+    .getin-icon {
+        background: #08a900;
+    }
+
+
+    /* ================= RECIPE ICON ================= */
+
+    .recipe-icon {
+        background: #ff6508;
+    }
+
+
+
+    /* ==========================================
+           PROJECT CONTENT
+    ========================================== */
+
+    .project-content {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        flex: 1;
+    }
+
+
+    /* ================= PROJECT TEXT ================= */
+
+    .project-content h2 {
+        width: 42%;
+
+        color: #ffffff;
+
+        font-size: 1.65rem;
+
+        line-height: 1.3;
+
+        font-weight: 700;
+
+        margin-right: 25px;
+    }
+
+
+    /* ================= PROJECT DESCRIPTION ================= */
+
+    .project-content p {
+        width: 43%;
+
+        color: #ffffff;
+
+        font-size: 0.98rem;
+
+        line-height: 1.7;
+
+        margin-right: 25px;
+    }
+
+
+
+    /* ==========================================
+           TECHNOLOGIES
+    ========================================== */
+
+    .technologies {
+        width: 35%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+
+    .technologies span {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 8px 13px;
+
+        border-radius: 8px;
+
+        font-size: 0.9rem;
+
+        font-weight: 500;
+
+        white-space: nowrap;
+    }
+
+
+
+    /* ================= HTML ================= */
+
+    .html-tech {
+        background: rgba(255, 85, 0, 0.20);
+        color: #ff721f;
+    }
+
+
+    /* ================= CSS ================= */
+
+    .css-tech {
+        background: rgba(0, 102, 255, 0.25);
+        color: #8ec5ff;
+    }
+
+
+    /* ================= JAVASCRIPT ================= */
+
+    .javascript-tech {
+        background: rgba(170, 150, 0, 0.22);
+        color: #ffff00;
+    }
+
+
+    /* ================= NODE.JS ================= */
+
+    .node-tech {
+        background: rgba(0, 145, 90, 0.25);
+        color: #58e5a8;
+    }
+
+
+    /* ================= API ================= */
+
+    .api-tech {
+        background: rgba(100, 60, 180, 0.35);
+        color: #d0b8ff;
+    }
+
+
+
+    /* ==========================================
+           CALL TO ACTION
+    ========================================== */
+
+    .project-cta {
+        position: relative;
+
+        width: calc(100% - 6.5%);
+
+        min-height: 150px;
+
+        margin: 0 auto 30px;
+
+        padding: 20px 10%;
+
+        display: flex;
+        align-items: center;
+
+        gap: 40px;
+
+        border: 1px solid rgba(0, 119, 255, 0.55);
+
+        border-radius: 17px;
+
+        background: rgba(5, 31, 70, 0.65);
+
+        overflow: hidden;
+    }
+
+
+
+    /* ==========================================
+           CTA ICON
+    ========================================== */
+
+    .cta-icon {
+        position: relative;
+
+        width: 105px;
+        height: 105px;
+
+        min-width: 105px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: #0864ff;
+
+        color: #ffffff;
+
+        font-size: 45px;
+
+        z-index: 2;
+    }
+
+
+
+    /* ==========================================
+           CTA CONTENT
+    ========================================== */
+
+    .cta-content {
+        position: relative;
+
+        flex: 1;
+
+        z-index: 2;
+    }
+
+
+    .cta-content h2 {
+        color: #ffffff;
+
+        font-size: 1.7rem;
+
+        line-height: 1.3;
+
+        font-weight: 700;
+
+        margin-bottom: 8px;
+    }
+
+
+    .cta-content p {
+        max-width: 520px;
+
+        color: #ffffff;
+
+        font-size: 0.95rem;
+
+        line-height: 1.65;
+    }
+
+
+
+    /* ==========================================
+           CTA BUTTON
+    ========================================== */
+
+    .cta-button {
+        position: relative;
+
+        width: 212px;
+        height: 55px;
+
+        min-width: 212px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 14px;
+
+        border-radius: 7px;
+
+        background: linear-gradient(
+            90deg,
+            #087cff,
+            #0054f5
+        );
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        font-size: 1rem;
+
+        font-weight: 600;
+
+        z-index: 2;
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+
+    .cta-button:hover {
+        transform: translateY(-2px);
+
+        box-shadow:
+            0 8px 20px rgba(0, 92, 255, 0.3);
+    }
+
+
+    .cta-button i {
+        font-size: 1.25rem;
+    }
+
+
+
+    /* ==========================================
+           CTA DECORATIONS
+    ========================================== */
+
+    .left-shape,
+    .right-shape {
+        position: absolute;
+
+        width: 180px;
+        height: 75px;
+
+        bottom: -38px;
+
+        border-radius: 50%;
+
+        background: rgba(0, 67, 180, 0.45);
+
+        z-index: 1;
+    }
+
+
+    .left-shape {
+        left: -55px;
+    }
+
+
+    .right-shape {
+        right: -55px;
+    }
+
+}
