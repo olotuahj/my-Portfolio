@@ -1,0 +1,1149 @@
+ body {
+   overflow-x: hidden;}
+
+
+/* ==========================================
+        MOBILE VIEW (0px - 767px)
+========================================== */
+
+@media (max-width:767px){
+           body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    width:100%;
+    height:70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 6%;
+
+    background:#0d2448;
+
+}
+
+/* ================= LOGO ================= */
+
+.logo h2{
+
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#63b2ff;
+
+}
+
+/* ================= DESKTOP NAVIGATION ================= */
+
+.nav-links{
+
+    display:none;
+
+}
+
+.hamburger{
+
+    display:block;
+
+    border:none;
+    background:none;
+
+    color:#fff;
+
+    font-size:1.8rem;
+
+    cursor:pointer;
+
+    margin-right: 80px;
+
+}
+
+/* ================= MOBILE MENU ================= */
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:0;
+    right:-100%;
+
+    width:75%;
+    height:100vh;
+
+    background:#12386b;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:30px;
+
+    transition:right .4s ease;
+
+    z-index:1001;
+
+}
+
+/* ================= OPEN MENU ================= */
+
+.mobile-menu.active{
+
+    right:0;
+
+}
+
+/* ================= CLOSE BUTTON ================= */
+
+.close-menu{
+
+    align-self:flex-end;
+
+    border:none;
+
+    background:none;
+
+    color:#fff;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    margin-bottom:40px;
+
+}
+
+/* ================= MENU LINKS ================= */
+
+.mobile-menu a{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:1.2rem;
+
+    margin:15px 0;
+
+    transition:.3s;
+
+}
+
+.mobile-menu a:hover{
+
+    color:#63b2ff;
+
+    padding-left:10px;
+
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% 25%,
+            rgba(15, 98, 215, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            #020b1c,
+            #061b3d,
+            #020b1c
+        );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 7% 50px;
+}
+
+/* ================= HERO CONTAINER ================= */
+
+.hero-container{
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image {
+    width: 260px;
+    max-width: 100%;
+    height: 320px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-bottom: 35px;
+
+    /* Glass background */
+    background: rgba(255, 255, 255, 0.07);
+
+    /* Neon border */
+    border: 2px solid rgba(150, 210, 255, 0.8);
+
+    border-radius: 25px;
+
+    /* Glass effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Neon glow */
+    box-shadow:
+        0 0 8px rgba(99, 178, 255, 0.8),
+        0 0 20px rgba(99, 178, 255, 0.5),
+        0 0 40px rgba(15, 98, 215, 0.35);
+
+    overflow: hidden;
+}
+
+
+/* ================= BLUE GLOW ================= */
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: 70px;
+    right: 5px;
+
+    border-radius: 50%;
+
+    background: #006eff;
+
+    opacity: 0.35;
+
+    filter: blur(8px);
+
+    box-shadow:
+        0 0 30px #006eff,
+        0 0 60px #006eff;
+
+    z-index: 0;
+}
+
+
+/* ================= SECOND GLOW ================= */
+
+.hero-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    bottom: -35px;
+    left: -30px;
+
+    border-radius: 50%;
+
+    background: #008cff;
+
+    opacity: 0.4;
+
+    filter: blur(8px);
+
+    z-index: 0;
+}
+
+
+/* ================= PORTRAIT ================= */
+
+.hero-image img {
+    width: 100%;
+    max-width: 290px;
+
+    height: auto;
+
+    display: block;
+
+    position: relative;
+    z-index: 2;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* ================= IMAGE HOVER ================= */
+
+.hero-image:hover img {
+    transform: scale(1.03);
+}
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content{
+
+    color:#fff;
+
+}
+
+.hero-content h1{
+
+    font-size:2.3rem;
+
+    line-height:1.2;
+
+    margin-bottom:10px;
+
+}
+
+.hero-content span{
+
+    color:#8fd0ff;
+
+}
+
+.hero-content h2{
+
+    font-size:1.3rem;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ================= BUTTON ================= */
+
+.hero-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:transparent;
+
+    color:#fff;
+
+    border:2px solid #fff;
+
+    text-decoration:none;
+
+    border-radius:6px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    background:#fff;
+
+    color:#0f62d7;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+}
+
+/* ==========================================
+        SMALL PHONES
+        0px - 400px
+========================================== */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        height: 80px;
+    }
+
+    .logo h2 {
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        font-size: 1.7rem;
+    }
+     }
+
+/* ==========================================
+        TABLET VIEW (768px - 1024px)
+========================================== */
+
+@media (min-width:768px) and (max-width:1024px){
+        body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    width:100%;
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 6%;
+
+    background:#0d2448;
+
+}
+
+/* ================= LOGO ================= */
+
+.logo h2{
+
+    color:#fff;
+    font-size:1.45rem;
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#63b2ff;
+
+}
+
+/* ================= DESKTOP NAVIGATION ================= */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    list-style:none;
+    padding-right: 6rem;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:0.95rem;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover,
+.nav-links .active{
+
+    color:#63b2ff;
+
+}
+
+/* ================= HAMBURGER ================= */
+
+/* Hidden on tablet */
+
+.hamburger{
+
+    display:none;
+
+}
+
+/* ================= MOBILE MENU ================= */
+
+/* Hidden on tablet */
+
+.mobile-menu{
+
+    display:none;
+
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 25% 50%,
+            rgba(15, 98, 215, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #020b1c,
+            #061b3d,
+            #020b1c
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 110px 6% 60px;
+}
+
+
+/* ================= HERO CONTAINER ================= */
+
+.hero-container{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:row;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+}
+
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image {
+    width: 45%;
+    max-width: 380px;
+    height: 430px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    /* Glass background */
+    background: rgba(255, 255, 255, 0.07);
+
+    /* Neon border */
+    border: 2px solid rgba(150, 210, 255, 0.8);
+
+    border-radius: 30px;
+
+    /* Glass effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Neon glow */
+    box-shadow:
+        0 0 10px rgba(99, 178, 255, 0.8),
+        0 0 25px rgba(99, 178, 255, 0.5),
+        0 0 50px rgba(15, 98, 215, 0.35);
+
+    overflow: hidden;
+}
+
+
+/* ================= GLOW BEHIND IMAGE ================= */
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    top: 80px;
+    right: 0;
+
+    border-radius: 50%;
+
+    background: #006eff;
+
+    opacity: 0.35;
+
+    filter: blur(8px);
+
+    box-shadow:
+        0 0 40px #006eff,
+        0 0 80px #006eff;
+
+    z-index: 0;
+}
+
+
+/* ================= SECOND GLOW ================= */
+
+.hero-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    bottom: -40px;
+    left: -35px;
+
+    border-radius: 50%;
+
+    background: #008cff;
+
+    opacity: 0.4;
+
+    filter: blur(8px);
+
+    box-shadow:
+        0 0 30px #008cff,
+        0 0 60px #008cff;
+
+    z-index: 0;
+}
+
+
+/* ================= PORTRAIT ================= */
+
+.hero-image img {
+    width: 100%;
+    max-width: 390px;
+
+    height: auto;
+
+    display: block;
+
+    position: relative;
+
+    z-index: 2;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* ================= IMAGE HOVER ================= */
+
+.hero-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content{
+
+    width:55%;
+
+    color:#fff;
+
+    text-align:left;
+
+}
+
+.hero-content h1{
+
+    font-size:3.1rem;
+
+    line-height:1.15;
+
+    margin-bottom:10px;
+
+}
+
+.hero-content span{
+
+    color:#8fd0ff;
+
+}
+
+.hero-content h2{
+
+    font-size:1.8rem;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    max-width:520px;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ================= BUTTON ================= */
+
+.hero-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+   
+    background:transparent;
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:6px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    background:#fff;
+
+    color:#0f62d7;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+}
+
+/* ==========================================
+        DESKTOP VIEW (1025px and above)
+========================================== */
+
+@media (min-width:1025px){
+           body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 10%;
+
+    background:#0d2448;
+
+}
+
+/* ================= LOGO ================= */
+
+.logo h2{
+
+    color:#fff;
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#63b2ff;
+
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:45px;
+
+    list-style:none;
+
+    padding-right: 20rem;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:1.05rem;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover,
+.nav-links .active{
+
+    color:#63b2ff;
+
+}
+
+
+/* ================= HAMBURGER ================= */
+
+/* Hidden on desktop */
+
+.hamburger{
+
+    display:none;
+
+}
+
+
+/* ================= MOBILE MENU ================= */
+
+/* Hidden on desktop */
+
+.mobile-menu{
+
+    display:none;
+
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 25% 50%,
+            rgba(15, 98, 215, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            90deg,
+            #020b1c,
+            #061b3d,
+            #020b1c
+        );
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 10% 60px;
+}
+
+
+/* ================= HERO CONTAINER ================= */
+
+.hero-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image {
+    width: 45%;
+    max-width: 520px;
+    height: 560px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    /* Glass background */
+    background: rgba(255, 255, 255, 0.07);
+
+    /* Neon border */
+    border: 2px solid rgba(150, 210, 255, 0.8);
+
+    border-radius: 35px;
+
+    /* Glass effect */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Neon glow */
+    box-shadow:
+        0 0 10px rgba(99, 178, 255, 0.8),
+        0 0 30px rgba(99, 178, 255, 0.5),
+        0 0 60px rgba(15, 98, 215, 0.35);
+
+    overflow: hidden;
+}
+
+
+/* ================= GLOW BEHIND IMAGE ================= */
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: 100px;
+    right: 20px;
+
+    border-radius: 50%;
+
+    background: #006eff;
+
+    opacity: 0.35;
+
+    filter: blur(10px);
+
+    box-shadow:
+        0 0 50px #006eff,
+        0 0 100px #006eff;
+
+    z-index: 0;
+}
+
+
+/* ================= SECOND GLOW ================= */
+
+.hero-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    bottom: -50px;
+    left: -40px;
+
+    border-radius: 50%;
+
+    background: #008cff;
+
+    opacity: 0.4;
+
+    filter: blur(8px);
+
+    box-shadow:
+        0 0 40px #008cff,
+        0 0 80px #008cff;
+
+    z-index: 0;
+}
+
+
+/* ================= PORTRAIT ================= */
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+
+    height: auto;
+
+    display: block;
+
+    position: relative;
+
+    z-index: 2;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* ================= IMAGE HOVER ================= */
+
+.hero-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content{
+
+    width:50%;
+
+    color:#fff;
+
+    text-align:left;
+
+}
+
+.hero-content h1{
+
+    font-size:4.1rem;
+
+    line-height:1.1;
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.hero-content h1 span{
+
+    color:#8fd0ff;
+
+}
+
+.hero-content h2{
+
+    font-size:2.4rem;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    max-width:600px;
+
+    margin-bottom:40px;
+
+}
+
+
+/* ================= BUTTON ================= */
+
+.hero-btn{
+
+    display:inline-block;
+
+    padding:17px 42px;
+
+    background:transparent;
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:7px;
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.hero-btn:hover{
+
+    background:#fff;
+
+    color:#0f62d7;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+}

@@ -1,0 +1,1804 @@
+/* ==========================================*
+*        MOBILE VIEW
+*        0px - 767px
+*========================================== */
+
+@media (max-width: 767px) {
+
+    /* ================= GENERAL ================= */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #031638;
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    #contact-header {
+        width: 100%;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 18px;
+        background: #0d2448;
+    }
+
+
+    /* ================= LOGO ================= */
+
+    .logo h2 {
+        font-size: 19px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .logo h2 span {
+        color: #087cff;
+        margin: 0 4px;
+    }
+
+
+    /* ================= DESKTOP NAV ================= */
+
+    .nav-links {
+        display: none;
+    }
+
+
+    /* ================= HAMBURGER ================= */
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border: none;
+        background: transparent;
+        color: #ffffff;
+        font-size: 23px;
+        cursor: pointer;
+    }
+
+
+/* ================= MOBILE MENU ================= */
+
+    .mobile-menu {
+
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: 75%;
+        height: 100vh;
+
+        background: #12386b;
+
+        display: flex;
+
+        flex-direction: column;
+
+        padding: 30px;
+
+        transition: right 0.4s ease;
+
+        z-index: 1001;
+    }
+
+
+    /* ================= OPEN MENU ================= */
+
+    .mobile-menu.active {
+
+        right: 0;
+    }
+
+
+    /* ================= CLOSE BUTTON ================= */
+
+    .close-menu {
+
+        align-self: flex-end;
+
+        border: none;
+
+        background: none;
+
+        color: #ffffff;
+
+        font-size: 2rem;
+
+        cursor: pointer;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* ================= MENU LINKS ================= */
+
+    .mobile-menu a {
+
+        text-decoration: none;
+
+        color: #ffffff;
+
+        font-size: 1.2rem;
+
+        margin: 15px 0;
+
+        transition: 0.3s;
+    }
+
+
+    .mobile-menu a:hover {
+
+        color: #63b2ff;
+
+        padding-left: 10px;
+    }
+
+
+    /* ================= CONTACT HERO ================= */
+
+    .contact-hero {
+        position: relative;
+        text-align: center;
+        padding: 32px 18px 30px;
+        overflow: hidden;
+    }
+
+
+    /* ================= DECORATIVE DOTS ================= */
+
+    .hero-decoration {
+        position: absolute;
+        width: 65px;
+        height: 80px;
+        opacity: 0.8;
+        background-image: radial-gradient(
+            #087cff 1.5px,
+            transparent 1.5px
+        );
+        background-size: 16px 16px;
+        pointer-events: none;
+    }
+
+    .left-dots {
+        top: 35px;
+        left: -5px;
+    }
+
+    .right-dots {
+        top: 35px;
+        right: -5px;
+    }
+
+
+    /* ================= SECTION LABEL ================= */
+
+    .section-label {
+        position: relative;
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 20px;
+        background: rgba(0, 102, 255, 0.18);
+        color: #087cff;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        margin-bottom: 16px;
+    }
+
+
+    /* ================= HERO HEADING ================= */
+
+    .contact-hero h1 {
+        position: relative;
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 13px;
+    }
+
+    .contact-hero h1 span {
+        color: #087cff;
+    }
+
+
+    /* ================= HERO TEXT ================= */
+
+    .contact-hero p {
+        position: relative;
+        max-width: 500px;
+        margin: 0 auto;
+        color: #d7deed;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ================= CONTACT INFORMATION ================= */
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        padding: 0 18px 25px;
+    }
+
+
+    /* ================= CONTACT CARD ================= */
+
+    .contact-card {
+        width: 100%;
+        padding: 18px 17px 19px;
+        border: 1px solid rgba(0, 119, 255, 0.35);
+        border-radius: 14px;
+        background: rgba(5, 31, 70, 0.65);
+    }
+
+
+    /* ================= CONTACT ICON ================= */
+
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 13px;
+        border-radius: 50%;
+        background: rgba(0, 92, 220, 0.35);
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+
+    /* ================= CARD TITLE ================= */
+
+    .contact-card h2 {
+        font-size: 19px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+
+    /* ================= CARD TEXT ================= */
+
+    .contact-card p {
+        color: #d0d8e9;
+        font-size: 13px;
+        margin-bottom: 16px;
+        word-break: break-word;
+    }
+
+
+    /* ================= CARD LINK ================= */
+
+    .contact-card a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #087cff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .contact-card a i {
+        font-size: 13px;
+    }
+
+
+    /* ================= CONTACT FORM ================= */
+
+    .contact-form-section {
+        margin: 0 18px 25px;
+        padding: 20px 16px 18px;
+        border: 1px solid rgba(0, 119, 255, 0.35);
+        border-radius: 14px;
+        background: rgba(5, 31, 70, 0.65);
+    }
+
+
+    /* ================= FORM HEADING ================= */
+
+    .form-heading {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 21px;
+    }
+
+    .form-icon {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: rgba(0, 92, 220, 0.35);
+        color: #087cff;
+        font-size: 17px;
+    }
+
+    .form-heading h2 {
+        font-size: 19px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .form-heading p {
+        color: #d0d8e9;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* ================= FORM GROUP ================= */
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 6px;
+    }
+
+
+    /* ================= INPUT BOX ================= */
+
+    .input-box,
+    .textarea-box {
+        position: relative;
+        width: 100%;
+    }
+
+
+    /* ================= INPUT ICONS ================= */
+
+    .input-box i,
+    .textarea-box i {
+        position: absolute;
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #d7e1f2;
+        font-size: 15px;
+        z-index: 2;
+    }
+
+    .textarea-box i {
+        top: 18px;
+        transform: none;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .input-box input,
+    .textarea-box textarea {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        outline: none;
+        border-radius: 9px;
+        background: rgba(44, 68, 111, 0.55);
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+    }
+
+    .input-box input {
+        height: 48px;
+        padding: 0 12px 0 42px;
+    }
+
+    .textarea-box textarea {
+        min-height: 110px;
+        padding: 12px 12px 12px 42px;
+        resize: vertical;
+        line-height: 1.6;
+    }
+
+
+    /* ================= PLACEHOLDER ================= */
+
+    .input-box input::placeholder,
+    .textarea-box textarea::placeholder {
+        color: #b9c5da;
+        opacity: 1;
+    }
+
+
+    /* ================= INPUT FOCUS ================= */
+
+    .input-box input:focus,
+    .textarea-box textarea:focus {
+        border-color: #087cff;
+        background: rgba(44, 68, 111, 0.7);
+    }
+
+
+    /* ================= SEND BUTTON ================= */
+
+    .send-btn {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: none;
+        border-radius: 9px;
+        background: linear-gradient(
+            90deg,
+            #087cff,
+            #0047e8
+        );
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .send-btn i {
+        font-size: 16px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        text-align: center;
+        padding: 25px 18px 28px;
+        border-top: 1px solid rgba(0, 119, 255, 0.25);
+        background: #02132f;
+    }
+
+    .footer h2 {
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 18px;
+    }
+
+
+    /* ================= SOCIAL LINKS ================= */
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 119, 255, 0.3);
+        border-radius: 50%;
+        background: rgba(0, 67, 160, 0.18);
+        color: #ffffff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+
+    /* ================= FOOTER LINE ================= */
+
+    .footer-line {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 18px;
+        background: rgba(0, 119, 255, 0.25);
+    }
+
+    .footer p {
+        color: #c4ccdb;
+        font-size: 11px;
+    }
+
+}
+
+/* ==========================================*
+*        SMALL PHONES
+*        0px - 400px
+*========================================== */
+
+@media (max-width: 400px) {
+
+    /* ================= HEADER ================= */
+
+    .navbar {
+        height: 65px;
+        padding: 0 15px;
+    }
+
+
+    /* ================= LOGO ================= */
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .logo h2 span {
+        margin: 0 3px;
+    }
+
+
+    /* ================= HAMBURGER ================= */
+
+    .hamburger {
+        width: 35px;
+        height: 35px;
+        font-size: 21px;
+    }
+
+
+    /* ================= MOBILE MENU ================= */
+
+    .mobile-menu {
+        width: 82%;
+        padding: 30px 20px;
+    }
+
+  /* ================= CLOSE BUTTON ================= */
+
+    .close-menu {
+
+        align-self: flex-end;
+
+        border: none;
+
+        background: none;
+
+        color: #ffffff;
+
+        font-size: 2rem;
+
+        cursor: pointer;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* ================= MENU LINKS ================= */
+
+    .mobile-menu a {
+
+        text-decoration: none;
+
+        color: #ffffff;
+
+        font-size: 1.2rem;
+
+        margin: 15px 0;
+
+        transition: 0.3s;
+    }
+
+
+    .mobile-menu a:hover {
+
+        color: #63b2ff;
+
+        padding-left: 10px;
+    }
+
+
+    /* ================= CONTACT HERO ================= */
+
+    .contact-hero {
+        padding: 28px 15px 26px;
+    }
+
+
+    /* ================= DECORATIVE DOTS ================= */
+
+    .hero-decoration {
+        width: 55px;
+        height: 70px;
+        background-size: 14px 14px;
+    }
+
+    .left-dots {
+        top: 32px;
+        left: -8px;
+    }
+
+    .right-dots {
+        top: 32px;
+        right: -8px;
+    }
+
+
+    /* ================= SECTION LABEL ================= */
+
+    .section-label {
+        padding: 5px 12px;
+        font-size: 10px;
+        margin-bottom: 14px;
+    }
+
+
+    /* ================= HERO HEADING ================= */
+
+    .contact-hero h1 {
+        font-size: 27px;
+        line-height: 1.2;
+        margin-bottom: 11px;
+    }
+
+
+    /* ================= HERO TEXT ================= */
+
+    .contact-hero p {
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+
+    /* ================= CONTACT INFORMATION ================= */
+
+    .contact-info {
+        gap: 11px;
+        padding: 0 15px 22px;
+    }
+
+
+    /* ================= CONTACT CARD ================= */
+
+    .contact-card {
+        padding: 16px 15px 17px;
+        border-radius: 12px;
+    }
+
+
+    /* ================= CONTACT ICON ================= */
+
+    .contact-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 11px;
+        font-size: 18px;
+    }
+
+
+    /* ================= CARD TITLE ================= */
+
+    .contact-card h2 {
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+
+
+    /* ================= CARD TEXT ================= */
+
+    .contact-card p {
+        font-size: 11px;
+        margin-bottom: 14px;
+    }
+
+
+    /* ================= CARD LINK ================= */
+
+    .contact-card a {
+        gap: 7px;
+        font-size: 11px;
+    }
+
+    .contact-card a i {
+        font-size: 12px;
+    }
+
+
+    /* ================= CONTACT FORM ================= */
+
+    .contact-form-section {
+        margin: 0 15px 22px;
+        padding: 18px 14px 16px;
+        border-radius: 12px;
+    }
+
+
+    /* ================= FORM HEADING ================= */
+
+    .form-heading {
+        gap: 9px;
+        margin-bottom: 19px;
+    }
+
+    .form-icon {
+        width: 37px;
+        height: 37px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+
+    .form-heading h2 {
+        font-size: 17px;
+        margin-bottom: 3px;
+    }
+
+    .form-heading p {
+        font-size: 10px;
+        line-height: 1.45;
+    }
+
+
+    /* ================= FORM GROUP ================= */
+
+    .form-group {
+        margin-bottom: 13px;
+    }
+
+    .form-group label {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+
+    /* ================= INPUT ICONS ================= */
+
+    .input-box i,
+    .textarea-box i {
+        left: 11px;
+        font-size: 14px;
+    }
+
+    .textarea-box i {
+        top: 16px;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .input-box input,
+    .textarea-box textarea {
+        font-size: 11px;
+        border-radius: 8px;
+    }
+
+    .input-box input {
+        height: 44px;
+        padding: 0 10px 0 37px;
+    }
+
+    .textarea-box textarea {
+        min-height: 100px;
+        padding: 10px 10px 10px 37px;
+        line-height: 1.5;
+    }
+
+
+    /* ================= SEND BUTTON ================= */
+
+    .send-btn {
+        height: 46px;
+        gap: 7px;
+        border-radius: 8px;
+        font-size: 13px;
+    }
+
+    .send-btn i {
+        font-size: 14px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        padding: 22px 15px 25px;
+    }
+
+    .footer h2 {
+        font-size: 17px;
+        margin-bottom: 16px;
+    }
+
+
+    /* ================= SOCIAL LINKS ================= */
+
+    .social-links {
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .social-links a {
+        width: 41px;
+        height: 41px;
+        font-size: 17px;
+    }
+
+
+    /* ================= FOOTER LINE ================= */
+
+    .footer-line {
+        margin-bottom: 16px;
+    }
+
+    .footer p {
+        font-size: 9px;
+    }
+
+}
+
+/* ==========================================*
+*        TABLET VIEW
+*        768px - 1024px
+*========================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* ================= GENERAL ================= */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #031638;
+        color: #ffffff;
+       overflow-x: auto;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    #contact-header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+
+   /* ================= NAVBAR ================= */
+
+    .navbar{
+        width:100%;
+        height:75px;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+        background:#0d2448;
+    }
+
+
+    /* ================= LOGO ================= */
+
+    .logo h2 {
+        color: #ffffff;
+        font-size: 1.45rem;
+        font-weight: 700;
+        padding: 0px 0px 0px 40px;
+    }
+
+    .logo span {
+        color: #63b2ff;
+    }
+
+
+    /* ================= NAVIGATION ================= */
+
+    .nav-links {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 25px;
+
+        list-style: none;
+         overflow-x: auto;
+         padding-right: 2.3rem;
+    }
+
+
+    .nav-links a {
+
+        text-decoration: none;
+
+        color: #ffffff;
+
+        font-size: 0.95rem;
+
+        font-weight: 500;
+
+        transition: 0.3s;
+    }
+
+
+    .nav-links a:hover {
+
+        color: #63b2ff;
+    }
+
+
+    .nav-links .active {
+
+        color: #63b2ff;
+    }
+
+
+    /* NO UNDERLINE */
+
+    .nav-links a.active::after {
+
+        display: none;
+    }
+
+
+    /* ================= HAMBURGER ================= */
+
+    .hamburger {
+        display: none;
+    }
+
+
+    /* ================= MOBILE MENU ================= */
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .contact-section{
+        width: 110%;
+    }
+
+
+    /* ================= CONTACT HERO ================= */
+
+    .contact-hero {
+        position: relative;
+        text-align: center;
+        padding: 110px 7% 45px;
+        overflow: hidden;
+    }
+
+
+    /* ================= DECORATIVE DOTS ================= */
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .left-dots {
+        display: none;
+    }
+
+    .right-dots {
+        display: none;
+    }
+
+
+    /* ================= SECTION LABEL ================= */
+
+    .section-label {
+        position: relative;
+        display: inline-block;
+        padding: 7px 16px;
+        border-radius: 20px;
+        background: rgba(0, 102, 255, 0.18);
+        color: #087cff;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        margin-bottom: 18px;
+    }
+
+
+    /* ================= HERO HEADING ================= */
+
+    .contact-hero h1 {
+        position: relative;
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    .contact-hero h1 span {
+        color: #087cff;
+    }
+
+
+    /* ================= HERO TEXT ================= */
+
+    .contact-hero p {
+        position: relative;
+        max-width: 650px;
+        margin: 0 auto;
+        color: #d7deed;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+
+    /* ================= CONTACT INFORMATION ================= */
+
+    .contact-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 5% 35px;
+    }
+
+
+    /* ================= CONTACT CARD ================= */
+
+    .contact-card {
+        width: 100%;
+        padding: 24px 22px 25px;
+        border: 1px solid rgba(0, 119, 255, 0.35);
+        border-radius: 16px;
+        background: rgba(5, 31, 70, 0.65);
+    }
+
+
+    /* ================= CONTACT ICON ================= */
+
+    .contact-icon {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        border-radius: 50%;
+        background: rgba(0, 92, 220, 0.35);
+        color: #ffffff;
+        font-size: 22px;
+    }
+
+
+    /* ================= CARD TITLE ================= */
+
+    .contact-card h2 {
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+
+
+    /* ================= CARD TEXT ================= */
+
+    .contact-card p {
+        color: #d0d8e9;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+        word-break: break-word;
+    }
+
+
+    /* ================= CARD LINK ================= */
+
+    .contact-card a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #087cff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .contact-card a i {
+        font-size: 14px;
+    }
+
+
+    /* ================= CONTACT FORM ================= */
+
+    .contact-form-section {
+        margin: 0 5% 35px;
+        padding: 28px 25px 25px;
+        border: 1px solid rgba(0, 119, 255, 0.35);
+        border-radius: 16px;
+        background: rgba(5, 31, 70, 0.65);
+    }
+
+
+    /* ================= FORM HEADING ================= */
+
+    .form-heading {
+        display: flex;
+        align-items: flex-start;
+        gap: 13px;
+        margin-bottom: 25px;
+    }
+
+    .form-icon {
+        flex-shrink: 0;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9px;
+        background: rgba(0, 92, 220, 0.35);
+        color: #087cff;
+        font-size: 19px;
+    }
+
+    .form-heading h2 {
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .form-heading p {
+        color: #d0d8e9;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    /* ================= FORM GROUP ================= */
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 7px;
+    }
+
+
+    /* ================= INPUT BOX ================= */
+
+    .input-box,
+    .textarea-box {
+        position: relative;
+        width: 100%;
+    }
+
+
+    /* ================= INPUT ICONS ================= */
+
+    .input-box i,
+    .textarea-box i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #d7e1f2;
+        font-size: 16px;
+        z-index: 2;
+    }
+
+    .textarea-box i {
+        top: 19px;
+        transform: none;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .input-box input,
+    .textarea-box textarea {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        outline: none;
+        border-radius: 10px;
+        background: rgba(44, 68, 111, 0.55);
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
+
+    .input-box input {
+        height: 52px;
+        padding: 0 14px 0 45px;
+    }
+
+    .textarea-box textarea {
+        min-height: 140px;
+        padding: 14px 14px 14px 45px;
+        resize: vertical;
+        line-height: 1.7;
+    }
+
+
+    /* ================= PLACEHOLDER ================= */
+
+    .input-box input::placeholder,
+    .textarea-box textarea::placeholder {
+        color: #b9c5da;
+        opacity: 1;
+    }
+
+
+    /* ================= INPUT FOCUS ================= */
+
+    .input-box input:focus,
+    .textarea-box textarea:focus {
+        border-color: #087cff;
+        background: rgba(44, 68, 111, 0.7);
+    }
+
+
+    /* ================= SEND BUTTON ================= */
+
+    .send-btn {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(
+            90deg,
+            #087cff,
+            #0047e8
+        );
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .send-btn i {
+        font-size: 17px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        width: 110%;
+        text-align: center;
+        padding: 30px 5% 32px;
+        border-top: 1px solid rgba(0, 119, 255, 0.25);
+        background: #02132f;
+    }
+
+    .footer h2 {
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+
+    /* ================= SOCIAL LINKS ================= */
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 22px;
+    }
+
+    .social-links a {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 119, 255, 0.3);
+        border-radius: 50%;
+        background: rgba(0, 67, 160, 0.18);
+        color: #ffffff;
+        font-size: 19px;
+        text-decoration: none;
+    }
+
+
+    /* ================= FOOTER LINE ================= */
+
+    .footer-line {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 20px;
+        background: rgba(0, 119, 255, 0.25);
+    }
+
+    .footer p {
+        color: #c4ccdb;
+        font-size: 12px;
+    }
+
+}
+
+
+/* ==========================================*
+*        CONTACT PAGE — DESKTOP VIEW
+*        1025px AND ABOVE
+*========================================== */
+
+@media (min-width: 1025px) {
+
+    /* ================= GENERAL ================= */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #031638;
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+
+
+    /* ================= HEADER ================= */
+
+ #contact-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+  
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background: #0d2448;
+}
+
+
+/* ================= LOGO ================= */
+.logo span {
+    color: #63b2ff;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #63b2ff;
+}
+
+
+    /* ================= NO UNDERLINE ================= */
+
+    .nav-links a.active::after {
+        display: none;
+    }
+
+
+    /* ================= HAMBURGER ================= */
+
+    .hamburger {
+        display: none;
+    }
+
+
+    /* ================= MOBILE MENU ================= */
+
+    .mobile-menu {
+        display: none;
+    }
+
+
+    /* ================= CONTACT HERO ================= */
+
+    .contact-hero {
+        position: relative;
+        text-align: center;
+        padding: 125px 7% 60px;
+        overflow: hidden;
+    }
+
+
+    /* ================= DECORATIVE DOTS ================= */
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .left-dots {
+        display: none;
+    }
+
+    .right-dots {
+        display: none;
+    }
+
+
+    /* ================= SECTION LABEL ================= */
+
+    .section-label {
+        position: relative;
+        display: inline-block;
+        padding: 8px 18px;
+        border-radius: 20px;
+        background: rgba(0, 102, 255, 0.18);
+        color: #087cff;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        margin-bottom: 20px;
+    }
+
+
+    /* ================= HERO HEADING ================= */
+
+    .contact-hero h1 {
+        position: relative;
+        font-size: 50px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    .contact-hero h1 span {
+        color: #087cff;
+    }
+
+
+    /* ================= HERO TEXT ================= */
+
+    .contact-hero p {
+        position: relative;
+        max-width: 700px;
+        margin: 0 auto;
+        color: #d7deed;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+    /* ================= CONTACT INFORMATION ================= */
+
+    .contact-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        padding: 0 6% 45px;
+    }
+
+
+    /* ================= CONTACT CARD ================= */
+
+    .contact-card {
+        width: 100%;
+        padding: 28px 25px 30px;
+        border: 1px solid rgba(0, 119, 255, 0.35);
+        border-radius: 16px;
+        background: rgba(5, 31, 70, 0.65);
+    }
+
+
+    /* ================= CONTACT ICON ================= */
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 17px;
+        border-radius: 50%;
+        background: rgba(0, 92, 220, 0.35);
+        color: #ffffff;
+        font-size: 24px;
+    }
+
+
+    /* ================= CARD TITLE ================= */
+
+    .contact-card h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+
+    /* ================= CARD TEXT ================= */
+
+    .contact-card p {
+        color: #d0d8e9;
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        word-break: break-word;
+    }
+
+
+    /* ================= CARD LINK ================= */
+
+    .contact-card a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #087cff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .contact-card a i {
+        font-size: 14px;
+    }
+
+
+    /* ================= CONTACT FORM ================= */
+
+    .contact-form-section {
+        margin: 0 6% 45px;
+        padding: 35px 35px 30px;
+        border: 1px solid rgba(0, 119, 255, 0.35);
+        border-radius: 16px;
+        background: rgba(5, 31, 70, 0.65);
+    }
+
+
+    /* ================= FORM HEADING ================= */
+
+    .form-heading {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 28px;
+    }
+
+    .form-icon {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: rgba(0, 92, 220, 0.35);
+        color: #087cff;
+        font-size: 21px;
+    }
+
+    .form-heading h2 {
+        font-size: 23px;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .form-heading p {
+        color: #d0d8e9;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* ================= FORM GROUP ================= */
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+
+    /* ================= INPUT BOX ================= */
+
+    .input-box,
+    .textarea-box {
+        position: relative;
+        width: 100%;
+    }
+
+
+    /* ================= INPUT ICONS ================= */
+
+    .input-box i,
+    .textarea-box i {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #d7e1f2;
+        font-size: 17px;
+        z-index: 2;
+    }
+
+    .textarea-box i {
+        top: 20px;
+        transform: none;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .input-box input,
+    .textarea-box textarea {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        outline: none;
+        border-radius: 10px;
+        background: rgba(44, 68, 111, 0.55);
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
+
+    .input-box input {
+        height: 54px;
+        padding: 0 15px 0 47px;
+    }
+
+    .textarea-box textarea {
+        min-height: 150px;
+        padding: 15px 15px 15px 47px;
+        resize: vertical;
+        line-height: 1.7;
+    }
+
+
+    /* ================= PLACEHOLDER ================= */
+
+    .input-box input::placeholder,
+    .textarea-box textarea::placeholder {
+        color: #b9c5da;
+        opacity: 1;
+    }
+
+
+    /* ================= INPUT FOCUS ================= */
+
+    .input-box input:focus,
+    .textarea-box textarea:focus {
+        border-color: #087cff;
+        background: rgba(44, 68, 111, 0.7);
+    }
+
+
+    /* ================= SEND BUTTON ================= */
+
+    .send-btn {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(
+            90deg,
+            #087cff,
+            #0047e8
+        );
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .send-btn i {
+        font-size: 17px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        text-align: center;
+        padding: 35px 6% 38px;
+        border-top: 1px solid rgba(0, 119, 255, 0.25);
+        background: #02132f;
+    }
+
+    .footer h2 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 22px;
+    }
+
+
+    /* ================= SOCIAL LINKS ================= */
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 24px;
+    }
+
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 119, 255, 0.3);
+        border-radius: 50%;
+        background: rgba(0, 67, 160, 0.18);
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+
+    /* ================= FOOTER LINE ================= */
+
+    .footer-line {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 22px;
+        background: rgba(0, 119, 255, 0.25);
+    }
+
+    .footer p {
+        color: #c4ccdb;
+        font-size: 12px;
+    }
+
+}
