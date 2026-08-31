@@ -342,31 +342,24 @@
 ========================================== */
 
 .skill-card {
-
     width: 100%;
-
-    min-height: 255px;
-
-    padding: 40px 35px;
-
+    min-height: auto;
+    padding: 25px 20px;
     box-sizing: border-box;
 
     display: flex;
-
     align-items: center;
 
-    gap: 45px;
+    gap: 20px;
 
     background: rgba(28, 76, 140, 0.42);
-
     border: 1px solid rgba(98, 170, 255, 0.15);
+    border-radius: 18px;
 
-    border-radius: 22px;
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.12);
-
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     backdrop-filter: blur(5px);
+
+    overflow: hidden;
 }
 
 
@@ -375,19 +368,15 @@
 ========================================== */
 
 .skill-icon {
-
-    width: 175px;
-
-    height: 175px;
-
-    min-width: 175px;
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    flex-shrink: 0;
 
     border-radius: 50%;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 }
 
@@ -397,10 +386,8 @@
 ========================================== */
 
 .skill-icon i {
-
     color: #ffffff;
-
-    font-size: 4.2rem;
+    font-size: 2.3rem;
 }
 
 
@@ -449,9 +436,8 @@
 ========================================== */
 
 .skill-content {
-
     flex: 1;
-
+    min-width: 0;
     text-align: left;
 }
 
@@ -461,16 +447,14 @@
 ========================================== */
 
 .skill-content h2 {
-
-    margin: 0 0 15px;
+    margin: 0 0 10px;
 
     color: #ffffff;
-
-    font-size: 1.55rem;
-
+    font-size: 1.05rem;
     font-weight: 700;
-
     line-height: 1.35;
+
+    overflow-wrap: break-word;
 }
 
 
@@ -479,129 +463,62 @@
 ========================================== */
 
 .skill-content p {
-
     margin: 0;
 
     color: #ffffff;
+    font-size: 0.85rem;
+    line-height: 1.6;
 
-    font-size: 1.05rem;
-
-    line-height: 1.8;
+    overflow-wrap: break-word;
+}
 }
 
 
 /* ==========================================
-        SMALL PHONES
-        0px - 400px
+   SMALL PHONES
+   0px - 400px
 ========================================== */
 
 @media (max-width: 400px) {
 
     .navbar {
-
         height: 80px;
     }
 
-
     .logo h2 {
-
         font-size: 1rem;
     }
 
-
     .hamburger {
-
         font-size: 1.7rem;
-
         margin-right: 35px;
     }
 
-
     .skills-section {
-
         padding: 120px 5% 45px;
     }
 
-
     .skills-intro {
-
         margin-bottom: 45px;
     }
 
-
     .skills-label {
-
         font-size: 0.85rem;
-
         padding: 8px 18px;
     }
 
-
     .skills-intro h1 {
-
         font-size: 2.4rem;
     }
 
-
     .skills-intro p {
-
         font-size: 0.95rem;
-
         line-height: 1.7;
     }
 
-
     .skills-container {
-
         gap: 18px;
     }
-
-
-    .skill-card {
-
-        min-height: 210px;
-
-        padding: 25px 20px;
-
-        gap: 20px;
-
-        border-radius: 18px;
-    }
-
-
-    .skill-icon {
-
-        width: 90px;
-
-        height: 90px;
-
-        min-width: 90px;
-    }
-
-
-    .skill-icon i {
-
-        font-size: 2.3rem;
-    }
-
-
-    .skill-content h2 {
-
-        font-size: 1.05rem;
-
-        margin-bottom: 10px;
-    }
-
-
-    .skill-content p {
-
-        font-size: 0.85rem;
-
-        line-height: 1.6;
-    }
-
-}
-
 }
 
 /* ==========================================
