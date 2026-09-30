@@ -1,12 +1,4 @@
-
-/* ==========================================
-   MOBILE VIEW
-   767px AND BELOW
-========================================== */
-
 @media (max-width: 767px) {
-
-    /* ================= GENERAL ================= */
 
     * {
         box-sizing: border-box;
@@ -20,9 +12,6 @@
         color: #ffffff;
     }
 
-
-    /* ================= HEADER ================= */
-
     #project-header {
         width: 100%;
         position: fixed;
@@ -30,9 +19,6 @@
         left: 0;
         z-index: 1000;
     }
-
-
-    /* ================= NAVBAR ================= */
 
     .navbar {
         width: 100%;
@@ -44,9 +30,6 @@
         background: #0d2448;
     }
 
-
-    /* ================= LOGO ================= */
-
     .logo h2 {
         color: #fff;
         font-size: 1.2rem;
@@ -57,15 +40,9 @@
         color: #63b2ff;
     }
 
-
-    /* ================= DESKTOP NAVIGATION ================= */
-
     .nav-links {
         display: none;
     }
-
-
-    /* ================= HAMBURGER ================= */
 
     .hamburger {
         display: block;
@@ -75,9 +52,6 @@
         font-size: 1.8rem;
         cursor: pointer;
     }
-
-
-    /* ================= MOBILE MENU ================= */
 
     .mobile-menu {
         position: fixed;
@@ -93,15 +67,9 @@
         z-index: 1001;
     }
 
-
-    /* ================= OPEN MENU ================= */
-
     .mobile-menu.active {
         right: 0;
     }
-
-
-    /* ================= CLOSE BUTTON ================= */
 
     .close-menu {
         align-self: flex-end;
@@ -112,9 +80,6 @@
         cursor: pointer;
         margin-bottom: 40px;
     }
-
-
-    /* ================= MENU LINKS ================= */
 
     .mobile-menu a {
         text-decoration: none;
@@ -129,9 +94,6 @@
         padding-left: 10px;
     }
 
-
-    /* ================= PROJECT HERO ================= */
-
     .project-hero {
         position: relative;
         width: 100%;
@@ -139,9 +101,6 @@
         padding: 130px 8% 40px;
         overflow: hidden;
     }
-
-
-    /* ================= SECTION LABEL ================= */
 
     .section-label {
         position: relative;
@@ -155,9 +114,6 @@
         margin-bottom: 20px;
     }
 
-
-    /* ================= PROJECT HEADING ================= */
-
     .project-hero h1 {
         position: relative;
         font-size: 3.1rem;
@@ -170,9 +126,6 @@
         color: #087cff;
     }
 
-
-    /* ================= PROJECT DESCRIPTION ================= */
-
     .project-hero p {
         position: relative;
         max-width: 570px;
@@ -182,9 +135,6 @@
         line-height: 1.8;
     }
 
-
-    /* ================= PROJECTS CONTAINER ================= */
-
     .projects-container {
         width: 100%;
         padding: 0 4% 25px;
@@ -192,9 +142,6 @@
         flex-direction: column;
         gap: 22px;
     }
-
-
-    /* ================= PROJECT CARD ================= */
 
     .project-card {
         width: 100%;
@@ -205,9 +152,6 @@
         border-radius: 18px;
         background: rgba(5, 31, 70, 0.65);
     }
-
-
-    /* ================= PROJECT ICON ================= */
 
     .project-icon {
         width: 92px;
@@ -221,43 +165,25 @@
         margin-bottom: 25px;
     }
 
-
-    /* ================= PORTFOLIO ICON ================= */
-
     .portfolio-icon {
         background: #0864ff;
     }
-
-
-    /* ================= GETIN ICON ================= */
 
     .getin-icon {
         background: #08a900;
     }
 
-
-    /* ================= RECIPE ICON ================= */
-
     .recipe-icon {
         background: #ff6508;
     }
-
-
-    /* ================= QUIZ ICON ================= */
 
     .quiz-icon {
         background: #8b5cf6;
     }
 
-
-    /* ================= PROJECT CONTENT ================= */
-
     .project-content {
         width: 100%;
     }
-
-
-    /* ================= PROJECT TITLE ================= */
 
     .project-content h2 {
         color: #ffffff;
@@ -267,18 +193,12 @@
         margin-bottom: 14px;
     }
 
-
-    /* ================= PROJECT DESCRIPTION ================= */
-
     .project-content p {
         color: #ffffff;
         font-size: 1.05rem;
         line-height: 1.8;
         margin-bottom: 25px;
     }
-
-
-    /* ================= TECHNOLOGIES ================= */
 
     .technologies {
         width: 100%;
@@ -298,64 +218,40 @@
         font-weight: 500;
     }
 
-
-    /* ================= HTML ================= */
-
     .html-tech {
         background: rgba(255, 85, 0, 0.20);
         color: #ff721f;
     }
-
-
-    /* ================= CSS ================= */
 
     .css-tech {
         background: rgba(0, 102, 255, 0.25);
         color: #8ec5ff;
     }
 
-
-    /* ================= JAVASCRIPT ================= */
-
     .javascript-tech {
         background: rgba(170, 150, 0, 0.22);
         color: #ffff00;
     }
-
-
-    /* ================= FIREBASE ================= */
 
     .firebase-tech {
         background: rgba(255, 193, 7, 0.20);
         color: #ffc107;
     }
 
-
-    /* ================= PAYSTACK ================= */
-
     .payment-tech {
         background: rgba(0, 180, 120, 0.20);
         color: #52e0b0;
     }
-
-
-    /* ================= REST API ================= */
 
     .api-tech {
         background: rgba(139, 92, 246, 0.20);
         color: #b79cff;
     }
 
-
-    /* ================= FETCH API ================= */
-
     .fetch-tech {
         background: rgba(20, 184, 166, 0.20);
         color: #5eead4;
     }
-
-
-    /* ================= CALL TO ACTION ================= */
 
     .project-cta {
         position: relative;
@@ -372,9 +268,6 @@
         overflow: hidden;
     }
 
-
-    /* ================= CTA ICON ================= */
-
     .cta-icon {
         position: relative;
         width: 130px;
@@ -389,9 +282,6 @@
         font-size: 55px;
         z-index: 2;
     }
-
-
-    /* ================= CTA CONTENT ================= */
 
     .cta-content {
         position: relative;
@@ -413,9 +303,6 @@
         line-height: 1.8;
         margin-bottom: 25px;
     }
-
-
-    /* ================= CTA BUTTON ================= */
 
     .cta-button {
         position: relative;
@@ -443,9 +330,6 @@
         font-size: 1.4rem;
     }
 
-
-    /* ================= CTA DECORATIONS ================= */
-
     .left-shape,
     .right-shape {
         position: absolute;
@@ -464,14 +348,7 @@
     .right-shape {
         right: -45px;
     }
-
 }
-
-
-/* ==========================================
-   SMALL PHONES
-   400px AND BELOW
-========================================== */
 
 @media (max-width: 400px) {
 
@@ -487,15 +364,9 @@
         font-size: 1.7rem;
     }
 
-
-    /* ================= PROJECT HERO ================= */
-
     .project-hero {
         padding: 120px 6% 35px;
     }
-
-
-    /* ================= SECTION LABEL ================= */
 
     .section-label {
         padding: 7px 16px;
@@ -503,17 +374,11 @@
         margin-bottom: 17px;
     }
 
-
-    /* ================= PROJECT HEADING ================= */
-
     .project-hero h1 {
         font-size: 2.45rem;
         line-height: 1.15;
         margin-bottom: 18px;
     }
-
-
-    /* ================= PROJECT DESCRIPTION ================= */
 
     .project-hero p {
         font-size: 0.95rem;
@@ -521,24 +386,15 @@
         padding: 0 10px;
     }
 
-
-    /* ================= PROJECTS CONTAINER ================= */
-
     .projects-container {
         padding: 0 4% 20px;
         gap: 18px;
     }
 
-
-    /* ================= PROJECT CARD ================= */
-
     .project-card {
         padding: 27px 25px 25px;
         border-radius: 16px;
     }
-
-
-    /* ================= PROJECT ICON ================= */
 
     .project-icon {
         width: 82px;
@@ -548,26 +404,17 @@
         margin-bottom: 21px;
     }
 
-
-    /* ================= PROJECT TITLE ================= */
-
     .project-content h2 {
         font-size: 1.5rem;
         line-height: 1.3;
         margin-bottom: 12px;
     }
 
-
-    /* ================= PROJECT DESCRIPTION ================= */
-
     .project-content p {
         font-size: 0.95rem;
         line-height: 1.75;
         margin-bottom: 21px;
     }
-
-
-    /* ================= TECHNOLOGIES ================= */
 
     .technologies {
         gap: 10px;
@@ -579,18 +426,12 @@
         font-size: 0.9rem;
     }
 
-
-    /* ================= CTA ================= */
-
     .project-cta {
         width: calc(100% - 8%);
         margin: 0 4% 18px;
         padding: 27px 24px 24px;
         border-radius: 16px;
     }
-
-
-    /* ================= CTA ICON ================= */
 
     .cta-icon {
         width: 110px;
@@ -599,26 +440,17 @@
         margin-bottom: 21px;
     }
 
-
-    /* ================= CTA HEADING ================= */
-
     .cta-content h2 {
         font-size: 1.5rem;
         line-height: 1.3;
         margin-bottom: 13px;
     }
 
-
-    /* ================= CTA TEXT ================= */
-
     .cta-content p {
         font-size: 0.95rem;
         line-height: 1.7;
         margin-bottom: 21px;
     }
-
-
-    /* ================= CTA BUTTON ================= */
 
     .cta-button {
         height: 55px;
@@ -630,9 +462,6 @@
     .cta-button i {
         font-size: 1.2rem;
     }
-
-
-    /* ================= CTA DECORATIONS ================= */
 
     .left-shape,
     .right-shape {
@@ -648,18 +477,9 @@
     .right-shape {
         right: -40px;
     }
-
 }
 
-
-/* ==========================================
-   PROJECT PAGE — TABLET VIEW
-   768px - 1024px
-========================================== */
-
 @media (min-width: 768px) and (max-width: 1024px) {
-
-    /* ================= GENERAL ================= */
 
     * {
         box-sizing: border-box;
@@ -674,9 +494,6 @@
         overflow-x: auto;
     }
 
-
-    /* ================= HEADER ================= */
-
     #project-header {
         width: 100%;
         position: fixed;
@@ -684,9 +501,6 @@
         left: 0;
         z-index: 1000;
     }
-
-
-    /* ================= NAVBAR ================= */
 
     .navbar {
         width: 100%;
@@ -698,9 +512,6 @@
         background: #0d2448;
     }
 
-
-    /* ================= LOGO ================= */
-
     .logo h2 {
         color: #fff;
         font-size: 1.45rem;
@@ -710,9 +521,6 @@
     .logo span {
         color: #63b2ff;
     }
-
-
-    /* ================= NAVIGATION ================= */
 
     .nav-links {
         display: flex;
@@ -738,24 +546,13 @@
         color: #63b2ff;
     }
 
-
-    /* ================= HAMBURGER ================= */
-
     .hamburger {
         display: none;
     }
 
-
-    /* ================= MOBILE MENU ================= */
-
     .mobile-menu {
         display: none;
     }
-
-
-    /* ==========================================
-       PROJECT HERO
-    ========================================== */
 
     .project-hero {
         position: relative;
@@ -768,9 +565,6 @@
     .project-section {
         width: 110%;
     }
-
-
-    /* ================= BACKGROUND DOTS ================= */
 
     .project-hero::before {
         content: "";
@@ -804,9 +598,6 @@
         opacity: 0.65;
     }
 
-
-    /* ================= SECTION LABEL ================= */
-
     .section-label {
         position: relative;
         display: inline-block;
@@ -819,9 +610,6 @@
         margin-bottom: 18px;
         z-index: 2;
     }
-
-
-    /* ================= PROJECT HEADING ================= */
 
     .project-hero h1 {
         position: relative;
@@ -836,9 +624,6 @@
         color: #087cff;
     }
 
-
-    /* ================= PROJECT DESCRIPTION ================= */
-
     .project-hero p {
         position: relative;
         max-width: 700px;
@@ -848,11 +633,6 @@
         line-height: 1.75;
         z-index: 2;
     }
-
-
-    /* ==========================================
-       PROJECTS CONTAINER
-    ========================================== */
 
     .projects-container {
         width: 100%;
@@ -864,11 +644,6 @@
         gap: 18px;
     }
 
-
-    /* ==========================================
-       PROJECT CARD
-    ========================================== */
-
     .project-card {
         width: 100%;
         min-height: 190px;
@@ -879,9 +654,6 @@
         border-radius: 18px;
         background: rgba(5, 31, 70, 0.65);
     }
-
-
-    /* ================= PROJECT ICON ================= */
 
     .project-icon {
         width: 78px;
@@ -896,46 +668,26 @@
         margin-right: 25px;
     }
 
-
-    /* ================= PORTFOLIO ICON ================= */
-
     .portfolio-icon {
         background: #0864ff;
     }
-
-
-    /* ================= GETIN ICON ================= */
 
     .getin-icon {
         background: #08a900;
     }
 
-
-    /* ================= RECIPE ICON ================= */
-
     .recipe-icon {
         background: #ff6508;
     }
-
-
-    /* ================= QUIZ ICON ================= */
 
     .quiz-icon {
         background: #8b5cf6;
     }
 
-
-    /* ==========================================
-       PROJECT CONTENT
-    ========================================== */
-
     .project-content {
         flex: 1;
         min-width: 0;
     }
-
-
-    /* ================= PROJECT TITLE ================= */
 
     .project-content h2 {
         color: #ffffff;
@@ -945,9 +697,6 @@
         margin-bottom: 10px;
     }
 
-
-    /* ================= PROJECT DESCRIPTION ================= */
-
     .project-content p {
         color: #ffffff;
         font-size: 0.95rem;
@@ -955,11 +704,6 @@
         max-width: 500px;
         margin-bottom: 15px;
     }
-
-
-    /* ==========================================
-       TECHNOLOGIES
-    ========================================== */
 
     .technologies {
         width: 100%;
@@ -979,66 +723,40 @@
         font-weight: 500;
     }
 
-
-    /* ================= HTML ================= */
-
     .html-tech {
         background: rgba(255, 85, 0, 0.20);
         color: #ff721f;
     }
-
-
-    /* ================= CSS ================= */
 
     .css-tech {
         background: rgba(0, 102, 255, 0.25);
         color: #8ec5ff;
     }
 
-
-    /* ================= JAVASCRIPT ================= */
-
     .javascript-tech {
         background: rgba(170, 150, 0, 0.22);
         color: #ffff00;
     }
-
-
-    /* ================= FIREBASE ================= */
 
     .firebase-tech {
         background: rgba(255, 193, 7, 0.20);
         color: #ffc107;
     }
 
-
-    /* ================= PAYSTACK ================= */
-
     .payment-tech {
         background: rgba(0, 180, 120, 0.20);
         color: #52e0b0;
     }
-
-
-    /* ================= REST API ================= */
 
     .api-tech {
         background: rgba(139, 92, 246, 0.20);
         color: #b79cff;
     }
 
-
-    /* ================= FETCH API ================= */
-
     .fetch-tech {
         background: rgba(20, 184, 166, 0.20);
         color: #5eead4;
     }
-
-
-    /* ==========================================
-       CALL TO ACTION
-    ========================================== */
 
     .project-cta {
         position: relative;
@@ -1056,9 +774,6 @@
         overflow: hidden;
     }
 
-
-    /* ================= CTA ICON ================= */
-
     .cta-icon {
         position: relative;
         width: 105px;
@@ -1073,9 +788,6 @@
         font-size: 45px;
         z-index: 2;
     }
-
-
-    /* ================= CTA CONTENT ================= */
 
     .cta-content {
         position: relative;
@@ -1097,9 +809,6 @@
         line-height: 1.65;
         max-width: 450px;
     }
-
-
-    /* ================= CTA BUTTON ================= */
 
     .cta-button {
         position: relative;
@@ -1127,11 +836,6 @@
         font-size: 1.2rem;
     }
 
-
-    /* ==========================================
-       CTA DECORATIONS
-    ========================================== */
-
     .left-shape,
     .right-shape {
         position: absolute;
@@ -1150,18 +854,9 @@
     .right-shape {
         right: -40px;
     }
-
 }
 
-
-/* ==========================================
-   PROJECT PAGE — DESKTOP VIEW
-   1025px AND ABOVE
-========================================== */
-
 @media (min-width: 1025px) {
-
-    /* ================= GENERAL ================= */
 
     * {
         box-sizing: border-box;
@@ -1175,9 +870,6 @@
         color: #ffffff;
     }
 
-
-    /* ================= HEADER ================= */
-
     #project-header {
         width: 100%;
         position: fixed;
@@ -1185,9 +877,6 @@
         left: 0;
         z-index: 1000;
     }
-
-
-    /* ================= NAVBAR ================= */
 
     .navbar {
         width: 100%;
@@ -1199,9 +888,6 @@
         background: #0d2448;
     }
 
-
-    /* ================= LOGO ================= */
-
     .logo h2 {
         color: #fff;
         font-size: 1.7rem;
@@ -1211,9 +897,6 @@
     .logo span {
         color: #63b2ff;
     }
-
-
-    /* ================= NAVIGATION ================= */
 
     .nav-links {
         display: flex;
@@ -1235,31 +918,19 @@
         color: #63b2ff;
     }
 
-
-    /* ================= HAMBURGER ================= */
-
     .hamburger {
         display: none;
     }
 
-
-    /* ================= MOBILE MENU ================= */
-
     .mobile-menu {
         display: none;
     }
-
 
     .project-section {
         width: 100%;
         min-height: 100vh;
         padding: 120px 8% 80px;
     }
-
-
-    /* ==========================================
-       PROJECT HERO
-    ========================================== */
 
     .project-hero {
         position: relative;
@@ -1275,9 +946,6 @@
                 #001b45 100%
             );
     }
-
-
-    /* ================= BACKGROUND DOTS ================= */
 
     .project-hero::before {
         content: "";
@@ -1311,9 +979,6 @@
         opacity: 0.85;
     }
 
-
-    /* ================= SECTION LABEL ================= */
-
     .section-label {
         position: relative;
         display: inline-block;
@@ -1326,9 +991,6 @@
         font-weight: 600;
         z-index: 2;
     }
-
-
-    /* ================= PROJECT HEADING ================= */
 
     .project-hero h1 {
         position: relative;
@@ -1344,9 +1006,6 @@
         color: #087cff;
     }
 
-
-    /* ================= PROJECT DESCRIPTION ================= */
-
     .project-hero p {
         position: relative;
         max-width: 800px;
@@ -1357,11 +1016,6 @@
         z-index: 2;
     }
 
-
-    /* ==========================================
-       PROJECTS CONTAINER
-    ========================================== */
-
     .projects-container {
         width: 100%;
         max-width: 1360px;
@@ -1371,11 +1025,6 @@
         flex-direction: column;
         gap: 17px;
     }
-
-
-    /* ==========================================
-       PROJECT CARD
-    ========================================== */
 
     .project-card {
         width: 100%;
@@ -1392,20 +1041,12 @@
             box-shadow 0.3s ease;
     }
 
-
-    /* ================= CARD HOVER ================= */
-
     .project-card:hover {
         transform: translateY(-4px);
         background: rgba(7, 39, 82, 0.8);
         box-shadow:
             0 12px 30px rgba(0, 0, 0, 0.2);
     }
-
-
-    /* ==========================================
-       PROJECT ICON
-    ========================================== */
 
     .project-icon {
         width: 72px;
@@ -1420,38 +1061,21 @@
         font-size: 32px;
     }
 
-
-    /* ================= PORTFOLIO ICON ================= */
-
     .portfolio-icon {
         background: #0864ff;
     }
-
-
-    /* ================= GETIN ICON ================= */
 
     .getin-icon {
         background: #08a900;
     }
 
-
-    /* ================= RECIPE ICON ================= */
-
     .recipe-icon {
         background: #ff6508;
     }
 
-
-    /* ================= QUIZ ICON ================= */
-
     .quiz-icon {
         background: #8b5cf6;
     }
-
-
-    /* ==========================================
-       PROJECT CONTENT
-    ========================================== */
 
     .project-content {
         width: 100%;
@@ -1459,9 +1083,6 @@
         align-items: center;
         flex: 1;
     }
-
-
-    /* ================= PROJECT TEXT ================= */
 
     .project-content h2 {
         width: 42%;
@@ -1472,9 +1093,6 @@
         margin-right: 25px;
     }
 
-
-    /* ================= PROJECT DESCRIPTION ================= */
-
     .project-content p {
         width: 43%;
         color: #ffffff;
@@ -1482,11 +1100,6 @@
         line-height: 1.7;
         margin-right: 25px;
     }
-
-
-    /* ==========================================
-       TECHNOLOGIES
-    ========================================== */
 
     .technologies {
         width: 35%;
@@ -1508,66 +1121,40 @@
         white-space: nowrap;
     }
 
-
-    /* ================= HTML ================= */
-
     .html-tech {
         background: rgba(255, 85, 0, 0.20);
         color: #ff721f;
     }
-
-
-    /* ================= CSS ================= */
 
     .css-tech {
         background: rgba(0, 102, 255, 0.25);
         color: #8ec5ff;
     }
 
-
-    /* ================= JAVASCRIPT ================= */
-
     .javascript-tech {
         background: rgba(170, 150, 0, 0.22);
         color: #ffff00;
     }
-
-
-    /* ================= FIREBASE ================= */
 
     .firebase-tech {
         background: rgba(255, 193, 7, 0.20);
         color: #ffc107;
     }
 
-
-    /* ================= PAYSTACK ================= */
-
     .payment-tech {
         background: rgba(0, 180, 120, 0.20);
         color: #52e0b0;
     }
-
-
-    /* ================= REST API ================= */
 
     .api-tech {
         background: rgba(139, 92, 246, 0.20);
         color: #b79cff;
     }
 
-
-    /* ================= FETCH API ================= */
-
     .fetch-tech {
         background: rgba(20, 184, 166, 0.20);
         color: #5eead4;
     }
-
-
-    /* ==========================================
-       CALL TO ACTION
-    ========================================== */
 
     .project-cta {
         position: relative;
@@ -1584,11 +1171,6 @@
         overflow: hidden;
     }
 
-
-    /* ==========================================
-       CTA ICON
-    ========================================== */
-
     .cta-icon {
         position: relative;
         width: 105px;
@@ -1603,11 +1185,6 @@
         font-size: 45px;
         z-index: 2;
     }
-
-
-    /* ==========================================
-       CTA CONTENT
-    ========================================== */
 
     .cta-content {
         position: relative;
@@ -1629,11 +1206,6 @@
         font-size: 0.95rem;
         line-height: 1.65;
     }
-
-
-    /* ==========================================
-       CTA BUTTON
-    ========================================== */
 
     .cta-button {
         position: relative;
@@ -1670,11 +1242,6 @@
         font-size: 1.25rem;
     }
 
-
-    /* ==========================================
-       CTA DECORATIONS
-    ========================================== */
-
     .left-shape,
     .right-shape {
         position: absolute;
@@ -1693,5 +1260,4 @@
     .right-shape {
         right: -55px;
     }
-
 }
