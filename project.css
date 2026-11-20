@@ -1261,3 +1261,8 @@
         right: -55px;
     }
 }
+
+.node-tech {
+    background: rgba(83, 158, 67, 0.20);
+    color: #83e17a;
+}
